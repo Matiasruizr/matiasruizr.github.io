@@ -1,0 +1,66 @@
+title: Matias Jesus Ruiz - Emprendedor - Arquitecto de Software
+logo:  # you can add own logo.
+description: Armando empresa desde los 18 años, CEO de Digital Jump, CTO y cofundador en Databot y CTO en Simplee.cl y fundador de Acomer
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://matiasruizr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Author Settings
+author:
+  name: Matias Jesus Ruiz
+  image: '/assets/img/matias_jesus_ruiz_ruiz.jpg'
+  job: Emprendedor - Arquitecto de Software
+  bio: Armando empresa desde los 18 años, CEO de Digital Jump, CTO y cofundador en Databot y CTO en Simplee.cl y fundador de Acomer
+  email: matias@digitaljump.cl
+
+
+# Contact links
+contact:
+  - name: Linkedin
+    link: https://www.linkedin.com/in/matiasruizr/
+  - name: Instagram
+    link: https://www.instagram.com/matias.jesus.ruiz/
+  - name: Medium
+    link: https://medium.com/@matiasruizr
+
+
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # add your shortname for Disqus Comment. For example mr-brown
+
+
+# Google Analytics
+google-analytics: # add your identifier. For example UA-99631805-1.
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
